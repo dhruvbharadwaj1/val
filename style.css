@@ -113,63 +113,43 @@ button {
   box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
 
-/* body {
-  text-align: center;
-  font-family: 'Comic Sans MS', cursive;
-  background: pink;
+/* Make the couple photo bigger on phones */
+@media (max-width: 768px) {
+  .couple-photo {
+    width: 90%;
+    max-width: 360px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 18px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 34px;
+  }
+  p {
+    font-size: 18px;
+  }
+  #emotion {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+.couple-photo {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
 
-h1 {
-  font-size: 40px;
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
 
-.media img, video {
-  width: 200px;
-  margin: 10px;
-  border-radius: 15px;
-}
 
-button {
-  font-size: 20px;
-  padding: 15px 30px;
-  margin: 20px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-/* #yes {
-  background: red;
-  color: white;
-}
-
-#no {
-  background: gray;
-} 
-
-.confetti {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: red;
-  top: -10px;
-  animation: fall linear infinite;
-}
-#emotion {
-  font-size: 20px;
-  color: darkred;
-  margin-top: 10px;
-}
-
-#yes {
-  font-size: 20px;
-  padding: 15px 30px;
-  transition: all 0.3s ease;
-}
-
-#no {
-  font-size: 20px;
-  padding: 15px 30px;
-}
- */
