@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Comic Sans MS', 'Poppins', cursive;
+  background: 
+    linear-gradient(
+      rgba(255, 240, 245, 0.9),
+      rgba(255, 240, 245, 0.9)
+    ),
+    url("https://img1.picmix.com/output/stamp/normal/4/6/2/4/2354264_59fd3.gif");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.bear {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+#emotion {
+  font-size: 20px;
+  color: #b00020;
+  min-height: 30px;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  font-size: 22px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yes {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#no {
+  background-color: #e74c3c;
+  color: white;
+}
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: -10px;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-size: 14px;
+  color: #555;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-family: 'Poppins', cursive;
+}
+
+.footer::before {
+  content: "❤️";
+}
+
+.yes-page {
+  background:
+    linear-gradient(
+      rgba(255, 240, 245, 0.95),
+      rgba(255, 240, 245, 0.95)
+    ),
+    url("https://img1.picmix.com/output/stamp/normal/4/6/2/4/2354264_59fd3.gif");
+  background-size: cover;
+}
+
+.couple-photo {
+  margin-top: 20px;
+  width: 320px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+/* body {
+  text-align: center;
+  font-family: 'Comic Sans MS', cursive;
+  background: pink;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.media img, video {
+  width: 200px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* #yes {
+  background: red;
+  color: white;
+}
+
+#no {
+  background: gray;
+} 
+
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: -10px;
+  animation: fall linear infinite;
+}
+#emotion {
+  font-size: 20px;
+  color: darkred;
+  margin-top: 10px;
+}
+
+#yes {
+  font-size: 20px;
+  padding: 15px 30px;
+  transition: all 0.3s ease;
+}
+
+#no {
+  font-size: 20px;
+  padding: 15px 30px;
+}
+ */
